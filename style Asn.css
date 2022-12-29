@@ -1,0 +1,82 @@
+*{ 
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    user-select: none;
+    
+}
+
+.animation{ 
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 2px solid black;
+    
+}    
+
+.slide{
+    color:gray;
+    font-size: 40px;
+    font-weight: bold;
+   text-transform: uppercase;
+} 
+   
+
+.inner-animation{
+    overflow:hidden;
+    height: 54px;
+}
+
+.inner-animation div div{
+    display: inline-block;
+    color:white;
+    padding: 2px 15px;
+    margin-bottom: 48px;
+}
+
+.inner-animation div:nth-child(1) div {
+    background-color:green;
+ }
+
+.inner-animation div:nth-child(2) div{ 
+    background-color: aqua;
+}
+
+.inner-animation div:nth-child(3) div{
+    background-color: red;
+}
+
+.inner-animation div:nth-child(1)  { 
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-delay:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation{ 
+   0%{margin-top: -270px;}
+   5%{margin-top: -180px;}
+   33%{margin-top: -180px;}
+   38%{margin-top: -90px;}
+   64%{margin-top: -90px;}
+   71%{margin-top: 0px;}
+   99.99%{margin-top:0px;}
+   100%{margin-top:-270px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
